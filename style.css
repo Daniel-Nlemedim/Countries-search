@@ -66,8 +66,8 @@ body {
   color: white;
   background-color: orangered;
   cursor: pointer;
-  position: absolute;
-  justify-content: center;
+  flex: 2;
+  margin-left: 13rem;
 }
 
 .country {

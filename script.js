@@ -34,47 +34,6 @@ const renderError = function (msg) {
   // countriesContainer.style.opacity = 1;
 };
 
-// NEW COUNTRIES API URL (use instead of the URL shown in videos):
-// https://restcountries.com/v2/name/portugal
-
-// NEW REVERSE GEOCODING API URL (use instead of the URL shown in videos):
-// https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}
-
-///////////////////////////////////////
-
-// const getCountryAndNeighbor = function (country) {
-//   //AJAX call country 1
-//   const request = new XMLHttpRequest();
-//   request.open('GET', `https://restcountries.com/v2/name/${country}`);
-//   request.send();
-
-//   request.addEventListener('load', function () {
-//     const [data] = JSON.parse(this.responseText);
-//     console.log(data);
-
-//     //render country 1
-//     renderCountry(data);
-
-//     //get neighbor country
-//     const neighbor = data.borders?.[0];
-//     if (!neighbor) return;
-
-//     //AJAX call country 2
-//     const request2 = new XMLHttpRequest();
-//     request2.open('GET', `https://restcountries.com/v2/alpha/${neighbor}`);
-//     request2.send();
-
-//     request2.addEventListener('load', function(){
-//       const data2 = JSON.parse(this.responseText);
-//       console.log(data2)
-
-//       renderCountry(data2, 'neighbor')
-//     })
-
-//   });
-// };
-// getCountryAndNeighbor('nigeria');
-
 //fetch API and promises
 const getCountryData = function (country) {
   //country1
